@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Purchase Movie Tickets</title>
+        <h:outputStylesheet library = "css" name = "styles.css"  />
+    </h:head>
+    <h:body>
+        
+        <div id="pageContainer">
+            <div id="contentWrap">
+                
+                <div class='mainPageHeaderDiv'>
+                    <h:graphicImage library="images" name="logo.png" class='pageHeader' height="100px" width="100px" />
+                    <h1 class='pageHeader'>Your Ticket to DFW's Movie Entertainment</h1>
+                </div>
+                <h1 class='secondaryHeader'>Purchase Tickets</h1>
+
+                <div class="movieInfoWrapper">
+                    <div class="movieInfoBlocks movieInfoTitle">
+                        <h1 class="movieTitle">#{purchasePageBean.selectedMovie.title} - #{purchasePageBean.selectedShowtime.showtimesPK.showtime}</h1>
+                    </div>
+                    <div class="purchasePageMiddle">
+                       <h2>#{purchasePageBean.selectedTheater.theaterName}</h2> 
+                    </div>
+                </div>
+
+                <div class="purchaseWrapper">
+                    <div class="movieInfoBlocks">
+                        <!--Form lists options for number of tickets to purchase and inputs for credit card number and zipcode-->
+                        <h:form class="purchaseForm">
+                            <h:panelGrid columns="2" styleClass="purchaseFormTable">
+                                <h:outputText value="Number of Tickets:" class="purchaseFormRows"/>
+                                <h:selectOneMenu value='#{purchasePageBean.numberOfTickets}' converter="javax.faces.Integer" class="purchaseFormRows">
+                                        <f:selectItem itemValue="1" itemLabel="1"/>
+                                        <f:selectItem itemValue="2" itemLabel="2"/>
+                                        <f:selectItem itemValue="3" itemLabel="3"/>
+                                        <f:selectItem itemValue="4" itemLabel="4"/>
+                                        <f:selectItem itemValue="5" itemLabel="5"/>
+                                        <f:selectItem itemValue="6" itemLabel="6"/>
+                                        <f:selectItem itemValue="7" itemLabel="7"/>
+                                        <f:selectItem itemValue="8" itemLabel="8"/>
+                                        <f:selectItem itemValue="9" itemLabel="9"/>
+                                        <f:selectItem itemValue="10" itemLabel="10"/>
+                                   </h:selectOneMenu>
+
+                                <h:outputLabel value="Credit Card Number:" class="purchaseFormRows"/>
+                                <h:inputText value="#{purchasePageBean.creditCardNumber}" maxlength="16" class="purchaseFormRows">
+                                    <f:validateLength minimum="16" />                
+                                </h:inputText>
+
+                                <h:outputLabel value="Billing Zipcode:" class="purchaseFormRows"/>
+                                <h:inputText value="#{purchasePageBean.billingZipcode}" maxlength="5" class="purchaseFormRows">
+                                    <f:validateLength minimum="5" />
+                                </h:inputText>
+                                <h:commandButton value="Purchase Tickets" action="#{purchasePageBean.confirmation()}" styleClass="purchaseFormRows movieInfoButton" />
+                            </h:panelGrid>
+                        </h:form>
+                    </div>
+
+                </div>
+                
+                <div class="footer">
+                <p>
+                    <b>CONTACT</b><br></br>
+                    775 Corporate Parkway<br></br>
+                    Dallas TX 75243<br></br>
+                    Phone: (972)-883-5555<br></br>
+                    Twitter: @cinemaone<br></br>
+                    Facebook: CinemaOne Corp.
+                </p>
+                </div>
+            </div>
+        </div>
+   
+        
+    </h:body>
+</html>
+

@@ -1,0 +1,341 @@
+body {
+    background-color: #cbf0f2;
+    font-family: "Arial";
+    margin: 0;
+    background-image: url(/FinalProject/resources/images/popcorn.jpg);
+    background-size: cover;
+}
+
+#pageContainer {
+    position: relative;
+    min-height: 100vh;
+}
+
+#contentWrap {
+    padding-bottom: 9em;
+}
+
+.breadCrumb {
+   color: white;
+   text-decoration: none;
+   font-size: 1.1em;
+}
+
+.breadCrumb a:link {
+    color: #5b8185;
+    text-decoration: none;
+}
+
+.breadCrumb a:visited {
+    color: #5b8185;
+    text-decoration: none;
+}
+
+.breadCrumb a:hover {
+    text-decoration: underline;
+}
+
+.confBlock {
+    color: #5b8185;
+    font-size: 1.5em;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.confForm {
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+.confEnjoyShow {
+    background-color: #5b8185;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 1px 1px 2px #424e4f;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.confEnjoyShowWrapper {
+    background-color: rgba(91, 129, 133, .8);
+    width: 50%;
+    margin: 0 auto 60px auto;
+}
+
+.confEnjoyShowImg {
+    text-align: center;
+}
+
+.confRow {
+    padding: 10px 60px;
+    color: #5b8185;
+    font-size: 1.2em;
+}
+
+.confRowTickets {
+    background-color: white;
+    font-weight: bold;
+    color: #5b8185;
+    font-size: 1.7em;
+    padding: 10px 60px;
+}
+
+.confBlockWrapper {
+    background-color: rgba(203, 240, 242, .8);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.footer {
+    background-color: rgba(91, 129, 133, .7);
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 9em;
+    font-size: .8em;
+    
+}
+
+.mainPageForm {
+    text-align: center;
+    width: 30%;
+    margin: 60px auto 0 auto;
+    background-color: rgba(203, 240, 242, .8);
+}
+
+.mainPageFormHeader {
+    background-color: white;
+    font-size: 1.7em;
+    color: #5b8185;
+    padding: 8px 0;
+}
+
+.mainPageFormRows td {
+    padding: 15px 0 15px 0;
+    color: #5b8185;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.mainPageFormRows a:link {
+    color: #5b8185;
+    text-decoration: none;
+}
+
+.mainPageFormRows a:visited {
+    color: #5b8185;
+    text-decoration: none;
+}
+
+.mainPageFormRows a:hover {
+    text-decoration: underline;
+}
+
+.mainPageHeader {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    font-size: 3em;
+    text-shadow: 1px 1px 2px #424e4f;
+}
+
+.mainPageHeaderDiv {
+    background-color: rgba(91, 129, 133, .7);
+}
+
+.moviesByTheaterForm {
+    width: 85%;
+    margin: 60px auto 0 auto;
+    background-color: rgba(203, 240, 242, .8);
+}
+
+.movieInfo {
+    width: 100%;
+    background-color: rgb(203, 240, 242);
+}
+
+
+.movieInfoBlocks {
+    border: 1px solid rgba(203, 240, 242, 0);
+    /*margin: auto 5px;*/
+}
+
+.movieInfoBlocks p {
+    text-align: center;
+}
+
+
+.movieInfoButtonsDiv {
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.movieInfoButtonsForm {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.movieInfoButton {
+    border-radius: 4px;
+    color: white;
+    background-color: #5b8185;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 1em;
+    text-shadow: 1px 1px 2px #424e4f;
+}
+
+.movieInfoButtonsForm tr {
+    display: inline;
+}
+
+
+.movieInfoMiddle {
+    background-color: white;
+    color: #5b8185;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    border-top: 1px solid #5b8185;
+    padding: 5px 0;
+}
+
+.movieInfoSynopsis {
+    background-color: white;
+    color: #5b8185;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 1.1em;
+}
+
+.movieInfoTitle {
+    margin: 0;
+}
+
+
+.movieInfoWrapper {
+    background-color: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.movieTimesWrapper {
+    background-color: rgba(203, 240, 242, .8);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.movieTimesWrapper p {
+    background-color: #5b8185;
+    color: white;
+    font-weight: bold; 
+    padding: 10px 0;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px #424e4f;
+}
+
+.movieTitle {
+    text-align: center;
+    background-color: white;
+    color: #5b8185;
+    margin: 0;
+    padding: 30px 0;
+    font-size: 2.5em;
+}
+
+.pageHeader {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    text-shadow: 1px 1px 2px #424e4f;
+}
+
+.purchaseForm {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.purchaseFormTable {
+    margin-left: auto;
+    margin-right: auto;
+    color: #5b8185;
+    background-color: white;
+    padding: 15px;
+}
+
+.purchaseFormRows {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.purchasePageMiddle {
+    background-color: white;
+    color: #5b8185;
+    text-align: center;
+    margin: 0;
+    border-top: 1px solid #5b8185;
+    padding: 5px 0;
+}
+
+.purchaseWrapper {
+    background-color: rgba(203, 240, 242, .8);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secondaryHeader {
+    background-color: rgba(252, 248, 217, .7);
+    color: #5b8185;
+    margin: 0 5px 0 0;
+    padding: 5px 0 5px 105px;
+}
+
+.theaterListForm {
+    width: 50%;
+    margin: 60px auto 0 auto;
+    background-color: rgba(203, 240, 242, .8);
+}
+
+.theaterListFormHeader {
+    text-align: center;
+    background-color: white;
+    font-size: 1.7em;
+    color: #5b8185;
+    padding: 8px 0;
+}
+
+.theaterListFormRows td {
+    padding: 15px 0 15px 10px;
+    color: #5b8185;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.theaterListFormRows a:link {
+    color: #5b8185;
+    text-decoration: none;
+}
+
+.theaterListFormRows a:visited {
+    color: #5b8185;
+    text-decoration: none;
+}
+
+.theaterListFormRows a:hover {
+    text-decoration: underline;
+}
+
+
+

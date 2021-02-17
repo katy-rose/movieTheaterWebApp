@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>CinemaOne List of Theaters</title>
+        <h:outputStylesheet library = "css" name = "styles.css"  /> 
+    </h:head>
+    <h:body>
+        
+        <div id="pageContainer">
+            <div id="contentWrap">
+                
+                <div class='mainPageHeaderDiv'>
+                <h:graphicImage library="images" name="logo.png" class='pageHeader' height="100px" width="100px" />
+                <h1 class='pageHeader'>Your Ticket to DFW's Movie Entertainment</h1>
+                </div>
+
+                <h1 class='secondaryHeader'>Theater Listings for #{theaterListBean.theaterList[0].zipcode}</h1>
+
+
+                <!--Data table pulls list of theaters by selected zipcode and displays theater name, address, and link to movie listings-->
+                <h:form>
+                    <h:dataTable value="#{theaterListBean.theaterList}" var="theater" styleClass='theaterListForm' headerClass='theaterListFormHeader' rowClasses="theaterListFormRows">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Theater" />                        
+                            </f:facet>
+                            <h:commandLink value="#{theater.theaterName}" 
+                                           action="#{moviesByTheaterBean.getMoviesForTheater()}">
+                                <f:param name="theater" value="#{theater.theaterName}" />
+                            </h:commandLink>    
+
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Address" />                        
+                            </f:facet>
+                            <h:outputText value="#{theater.address}" />    
+                        </h:column>
+
+                    </h:dataTable>
+                </h:form>
+                
+                <div class="footer">
+                <p>
+                    <b>CONTACT</b><br></br>
+                    775 Corporate Parkway<br></br>
+                    Dallas TX 75243<br></br>
+                    Phone: (972)-883-5555<br></br>
+                    Twitter: @cinemaone<br></br>
+                    Facebook: CinemaOne Corp.
+                </p>
+            </div>
+                
+            </div>
+        </div>
+        
+        
+        
+    </h:body>
+</html>
+
