@@ -1,10 +1,10 @@
 # movieTheaterWebApp
-CS 4336 Advanced Java Semester Project
+CS 4336 Advanced Java Semester Project</br>
 In this project you will create a web application for a movie theater.
-
+</br></br>
 File descriptions:
 
-ENTITY FILES BASED ON DATABASE TABLES 
+**ENTITY FILES BASED ON DATABASE TABLES** </br>
 Dfwtheaters.java 
 - theater name, address, and zipcode
 
@@ -20,13 +20,13 @@ Showtimes.java / ShowtimesPK.java
 Zipcodes.java 
 - list of area zipcodes
 
-
-EJB
+</br></br>
+**EJB**</br>
 MovieDB_EJB.java 
 - EJB that calls named queries to support looking up zipcodes, theaters, movies, and showtimes
 
-
-CDI BEANS
+</br></br>
+**CDI BEANS**</br>
 MainPageBean.java
 - Supports mainpage.xhtml by calling EJB to look up all zipcodes
 
@@ -42,8 +42,8 @@ MovieInfoBean.java
 PurchasePageBean.java
 - Supports PurchasePage.xhtml and ConfirmationPage.xhtml by recording selected movie/theater/showtime, calculating total cost for tickets, and recording credit card and billing zipcode
 
-
-JSF PAGES
+</br></br>
+**JSF PAGES**</br>
 MainPage.xhtml
 - Home page / Displays list of zipcodes
 
